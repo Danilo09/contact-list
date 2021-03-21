@@ -112,19 +112,19 @@ export default {
     //         ))
     //     },
     async created() {
-            let newContacts
-            const response = await fetch("https://private-21e8de-rafaellucio.apiary-mock.com/users");
-            const data = await response.json();
-            this.contactsResponse  = data;
-            newContacts = this.contactsResponse,
+            // let newContacts
+            // const response = await fetch("https://private-21e8de-rafaellucio.apiary-mock.com/users");
+            // const data = await response.json();
+            // this.contactsResponse  = data;
+            // newContacts = this.contactsResponse,
 
-            Object.keys(newContacts).map(
-                function(object){
-                newContacts[object]["id"]= new Date().getTime();
-            }),
+            // Object.keys(newContacts).map(
+            //     function(object){
+            //     newContacts[object]["id"]= new Date().getTime();
+            // }),
             
-            this.contactsResponse = newContacts
-            console.log(this.contacts)
+            // this.contactsResponse = newContacts
+            // console.log(this.contacts)
             // localStorage.setItem("contact", JSON.stringify(this.contacts))
             this.contacts = JSON.parse(localStorage.getItem('contact'));
     },

@@ -15,10 +15,21 @@ npm run serve
 npm run build
 ```
 
-### Lints and fixes files
+### Test Unit with Jest
 ```
-npm run lint
+npm run test
 ```
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Design considerations
+```
+Criação de cadastro de contato, sendo possível adicionar Nome, CPF, Email e Telefone usando Vue JS
+
+Nesse modelo podemos Cadastrar, Renomear, Atualizar e Remover contatos, sendo eles gravados em Local Storage.
+
+Foi comentado dentro do código a renderização da chamada de API, com Axios e Fetch, pois ao editar o contato, não funciona do mesmo modo conforme a listagem normal.
+
+
+```
